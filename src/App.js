@@ -1,12 +1,15 @@
 import React, {useState} from 'react';
 import './App.css';
 import Parent from './Parent';
+import counterContext from './counterContext';
 
 export default function App() {
   return(
-    <div>
-      <Parent />
-    </div>
+    <counterContext.Provider value={1}>
+      <div>
+        <Parent/>
+      </div>
+    </counterContext.Provider>
 
   ); 
 }
