@@ -4,9 +4,9 @@ import Parent from './Parent';
 import counterContext from './counterContext';
 import './Child.css';
 export default function App() {
-  let [count, updateCounter,dark,light] = useState([0],[],[true]);
+  let [count, updateCounter] = useState([0]);
   return(
-    <counterContext.Provider value={[count,updateCounter,dark,light]}>
+    <counterContext.Provider value={[count,updateCounter]}>
       <div>
         <Parent/>
       </div>
