@@ -22,10 +22,10 @@ jobs:
         run: npm install
      
       - name: Build React App
-        run: npm build
+        run: yarn build
      
       - name: Install Surge
         run: npm install -g surge
       
       - name: Run surge
-        run: surge ./build react_counterapp_hooks.surge.sh --token ${{ secrets.COUNTER_TOKEN }}
+        run: surge ./build react_counterapp_hook.surge.sh --token ${{ secrets.COUNTER_TOKEN }}
