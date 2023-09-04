@@ -2,10 +2,11 @@ import React, {useState} from 'react';
 import './App.css';
 import Parent from './Parent';
 import counterContext from './counterContext';
-
+import './Child.css';
 export default function App() {
+  let [count, updateCounter,dark,light] = useState([0],[],[true]);
   return(
-    <counterContext.Provider value={1}>
+    <counterContext.Provider value={[count,updateCounter,dark,light]}>
       <div>
         <Parent/>
       </div>
