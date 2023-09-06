@@ -4,6 +4,6 @@ const counterReducer = (state, action) =>{
             return state + 1
         case 'Decrement':
             return state -1
-    }
+    };
 }
 export default counterReducer;
