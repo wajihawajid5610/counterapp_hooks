@@ -3,7 +3,9 @@ import Child from './Child';
 
 const Parent = () =>{
     return(
-        <Child/>
-    );
+        <div>
+            <Child />
+         </div>  
+    )
 }
 export default Parent;
