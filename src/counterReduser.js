@@ -8,7 +8,8 @@ const counterReducer = (state, action) => {
             else
                 alert('not be less than zero')
                 return state = 0
-                
+         case 'Reset':
+            return  state = 0    
         default:
              throw new Error();
     }

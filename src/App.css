@@ -1,6 +1,6 @@
 .main
 {
-background-color:rgb(216, 21, 21);
+background-color:#173db9;
 height: 500px;
 width: 60%;
 align-items: center;
@@ -10,10 +10,10 @@ text-align: center;
 }
 .h1
 {
-color: rgb(128, 123, 145);
+color: rgb(246, 249, 253);
 }
 .h2{
-  color:rgb(200, 163, 235) ;
+  color:rgb(13, 2, 71) ;
 }
 .dark
 {
